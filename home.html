@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Resume - Yesu Raja R</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+      background-color: #f9f9f9;
+    }
+
+    /* Landing Page */
+    .landing {
+      height: 100vh;
+      background: linear-gradient(to right, #4a90e2, #357ABD);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    .landing h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+
+    .view-resume-btn {
+      padding: 15px 30px;
+      font-size: 18px;
+      background-color: white;
+      color: #4a90e2;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+      font-weight: bold;
+    }
+
+    .view-resume-btn:hover {
+      background-color: #f0f0f0;
+    }
+
+    /* Resume Header & Content */
+    header {
+      background-color: #4a90e2;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .profile-pic img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 3px solid white;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+
+    .contact p, .contact a {
+      color: white;
+      margin: 5px 0;
+    }
+
+    section {
+      padding: 30px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #4a90e2;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
+    }
+
+    .skills-grid {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .skills-grid div {
+      flex: 1;
+      margin: 10px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: center;
+    }
+
+    ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    input, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 100%;
+    }
+
+    button {
+      padding: 10px;
+      background-color: #4a90e2;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .certificates {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .certificates img {
+      width: 300px;
+      height: auto;
+      border: 2px solid #aaa;
+      border-radius: 8px;
+    }
+
+    .certificates p {
+      text-align: center;
+      margin: 5px 0 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Landing Page -->
+  <div class="landing">
+    <h1>Welcome to My Resume</h1>
+    <button class="view-resume-btn" onclick="document.getElementById('resume').scrollIntoView({behavior: 'smooth'})">
+      View Resume
+    </button>
+  </div>
+
+  <!-- Full Resume -->
+  <div id="resume">
+    <header>
+      <div class="profile-pic">
+        <img src="your-photo.jpg" alt="Yesu Raja R">
+      </div>
+      <h1>YESU RAJA R</h1>
+      <p>Information Technology Student | 2nd Year</p>
+      <div class="contact">
+        <p>Virudhunagar, Tamil Nadu | +91 98765 43210 | yesuraja@example.com</p>
+        <p>
+          <a href="#">LinkedIn</a> |
+          <a href="#">Portfolio</a> |
+          <a href="#">GitHub</a>
+        </p>
+      </div>
+    </header>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I am a dedicated and enthusiastic IT student at AAACET with a passion for software development, web technologies, and data science. I enjoy solving real-world problems through code and continuously learning new technologies.</p>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div>
+          <h3>Programming</h3>
+          <ul>
+            <li>Java</li>
+            <li>Python</li>
+            <li>C, C++</li>
+            <li>HTML, CSS, JavaScript</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Tools & Technologies</h3>
+          <ul>
+            <li>Git, GitHub</li>
+            <li>Visual Studio Code, Eclipse</li>
+            <li>MySQL, MongoDB</li>
+            <li>React, Node.js</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <table>
+        <tr>
+          <th>Degree</th>
+          <th>Institution</th>
+          <th>Year</th>
+          <th>CGPA</th>
+        </tr>
+        <tr>
+          <td>B.Tech IT</td>
+          <td>AAACET, Sivakasi</td>
+          <td>2023 - Present</td>
+          <td>8.2</td>
+        </tr>
+        <tr>
+          <td>HSC</td>
+          <td>Govt Hr Sec School</td>
+          <td>2021 - 2023</td>
+          <td>85%</td>
+        </tr>
+        <tr>
+          <td>SSLC</td>
+          <td>Govt Hr Sec School</td>
+          <td>2019 - 2021</td>
+          <td>90%</td>
+        </tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+      <table>
+        <tr>
+          <th>Role</th>
+          <th>Company</th>
+          <th>Duration</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>Intern - Web Development</td>
+          <td>XYZ Tech</td>
+          <td>Jan 2024 - Mar 2024</td>
+          <td>Worked on frontend design using ReactJS and backend with Node.js.</td>
+        </tr>
+        <tr>
+          <td>Freelancer</td>
+          <td>Self</td>
+          <td>2023 - Present</td>
+          <td>Created websites and portfolio pages for clients and students.</td>
+        </tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Portfolio Website:</strong> Built a responsive personal portfolio using HTML, CSS, and JavaScript.</li>
+        <li><strong>Task Manager App:</strong> Developed a full-stack to-do app with React and Node.js for task tracking.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Certificates</h2>
+      <div class="certificates">
+        <div>
+          <img src="/images/a.jpg" alt="Certificate 1">
+          <p>data analytics internship - navi tech</p>
+        </div>
+        <div>
+          <img src="/images/b.jpg" alt="Certificate 2">
+          <p>data analytics - navi tech</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Contact Me</h2>
+      <form>
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <p>Connect on <a href="#">Instagram</a>, <a href="#">Facebook</a>, <a href="#">GitHub</a></p>
+    </section>
+  </div>
+
+</body>
+</html>
